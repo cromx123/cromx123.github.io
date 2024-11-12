@@ -6,76 +6,132 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    background-color: #1a1a2e;
+    color: #f5f5f5;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
+.hero-section {
+    background: url('background.jpg') no-repeat center center/cover;
     text-align: center;
-    padding: 2em 0;
+    padding: 100px 20px;
+    position: relative;
 }
 
-.profile img {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a, .contact-button {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.contact-button {
+    border: 2px solid #ff4b5c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ff4b5c;
+}
+
+.contact-button:hover {
+    background-color: #ff4b5c;
+    color: #f5f5f5;
+}
+
+.hero-content {
+    padding-top: 50px;
+}
+
+.profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #ff4b5c;
+    margin-bottom: 20px;
 }
 
-.profile h1 {
-    margin-top: 1em;
+.about-section {
+    background-color: #16213e;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #ff4b5c;
     font-size: 2em;
+    margin-bottom: 20px;
 }
 
-section {
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.about, .skills, .projects, .contact {
-    margin-bottom: 2em;
+.about-content img {
+    width: 200px;
+    border-radius: 10px;
 }
 
-h2 {
-    font-size: 1.8em;
-    color: #4CAF50;
-    margin-bottom: 0.5em;
+.about-text {
+    max-width: 600px;
+    text-align: left;
 }
 
-.skills ul {
-    list-style-type: none;
+.info-box p {
+    background-color: #1a1a2e;
+    padding: 10px;
+    margin: 5px 0;
 }
 
-.skills ul li {
-    background-color: #f4f4f4;
-    padding: 0.5em;
-    margin: 0.5em 0;
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4b5c;
+    color: #f5f5f5;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.project {
-    background-color: #f9f9f9;
-    padding: 1em;
-    margin: 1em 0;
-    border-left: 5px solid #4CAF50;
+.services-section {
+    padding: 50px;
+    text-align: center;
 }
 
-.contact p, .contact a {
-    margin-top: 0.5em;
-    color: #333;
-    text-decoration: none;
+.services-section h2 {
+    color: #ff4b5c;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #0f3460;
+    color: #f5f5f5;
     text-align: center;
-    padding: 1em 0;
+    padding: 20px 0;
 }
